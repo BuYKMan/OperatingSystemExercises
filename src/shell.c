@@ -1,5 +1,5 @@
 /**
- * Grup: [GRUP_NO]
+ * Grup: 30
  * Bu dosya Linux Shell uygulamasının ana program dosyasıdır.
  *
  * Yazanlar:
@@ -88,7 +88,7 @@ int main()
         // Satır sonu karakterini kaldır
         input[strcspn(input, "\n")] = 0;
 
-        // Boş girdi kontrolü
+        // Bos girdi kontrolü
         if (strlen(input) == 0)
         {
             continue;
@@ -99,7 +99,7 @@ int main()
         {
             if (background_processes_count > 0)
             {
-                printf("Arkaplan işlemleri bekleniyor...\n");
+                printf("background porcess is waiting \n");
                 while (background_processes_count > 0)
                 {
                     pause();
